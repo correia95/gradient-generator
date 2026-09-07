@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#7c3aed" />
+
+    <title>CSS Gradient Generator — linear, radial &amp; conic</title>
+    <meta
+      name="description"
+      content="Build a CSS gradient — linear, radial or conic — with any number of colour stops, an angle control and a repeating option, and copy the CSS. Live preview, presets, and the whole gradient is shareable in the URL. Runs in your browser."
+    />
+    <link rel="canonical" href="https://gradient-generator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSS Gradient Generator" />
+    <meta property="og:description" content="Linear, radial and conic CSS gradients — multiple colour stops, angle, repeating, presets. Live preview, copy CSS, shareable URL." />
+    <meta property="og:url" content="https://gradient-generator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://gradient-generator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CSS Gradient Generator" />
+    <meta name="twitter:description" content="Linear, radial and conic CSS gradients — multiple colour stops, angle, repeating, presets. Live preview, copy CSS, shareable URL." />
+    <meta name="twitter:image" content="https://gradient-generator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "CSS Gradient Generator",
+        "url": "https://gradient-generator.correia95.workers.dev/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Create linear, radial and conic CSS gradients with multiple colour stops, angle and repeating controls, a live preview and copyable CSS, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I make a CSS gradient?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pick a type (linear, radial or conic), set the angle, and add colour stops with a colour and a position. Copy the generated background declaration into your CSS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between linear, radial and conic gradients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A linear gradient blends along a line at a given angle. A radial gradient blends outward from a point as a circle or ellipse. A conic gradient sweeps around a point like a colour wheel, which suits pie charts and spinners."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I make stripes or a hard colour edge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Put two colour stops at the same position so the colour changes abruptly instead of blending, and turn on the repeating option to tile the pattern across the element."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my gradient sent to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The CSS is generated in your browser and the gradient is encoded in the page URL, so sharing the link reproduces it exactly. The page works offline once loaded."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This CSS gradient generator needs JavaScript. It builds linear, radial and conic gradients
+        with multiple colour stops and gives you the CSS to copy.
+      </p>
+    </noscript>
+  </body>
+</html>
